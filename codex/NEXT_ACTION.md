@@ -7,10 +7,10 @@ Create the next translation chunk for Shamela language books category `29 - كت
 The next untranslated row is:
 
 ```text
-serial_number: 6323691
+serial_number: 6323692
 book_id: 22640
 book_title: أبو تراب اللغوي وكتابه الاعتقاب
-page_number: 353
+page_number: 354
 volume_number: 114
 ```
 
@@ -44,7 +44,7 @@ D:\ShamelaTranslation\language_books\books_language_category_29.json
 
 ## Completion Checklist
 
-- [ ] Pick row `6323691`
+- [ ] Pick row `6323692`
 - [ ] Add `book_metadata` from `MoMonir/Shamela_Books_info`
 - [ ] Preserve Arabic source text
 - [ ] Add readable English translation
@@ -59,7 +59,7 @@ D:\ShamelaTranslation\language_books\books_language_category_29.json
 Completed row:
 
 ```text
-serial_number: 6323690
+serial_number: 6323691
 book_id: 22640
 book_title: أبو تراب اللغوي وكتابه الاعتقاب
 ```
@@ -67,6 +67,6 @@ book_title: أبو تراب اللغوي وكتابه الاعتقاب
 Local outputs:
 
 ```text
-D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323690.jsonl
-D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323690.jsonl
+D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323691.jsonl
+D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323691.jsonl
 ```
