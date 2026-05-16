@@ -25,7 +25,12 @@ status: ready locally
 - Lexicon tracker: #85
 - Infrastructure tasks: #86 through #97
 - Per-book extraction tasks: #98 through #176
+- Fresh-start cleanup: #177 through #183
 - Word summary tasks: generated after the discovered-word manifest exists
+
+## Fresh-Start State
+
+Pre-policy generated translated-row outputs, word-by-word outputs, stale translation checkpoints, and stale run notes were deleted before lexicon extraction began. The queue is fresh for the sourced lexicon workflow.
 
 ## Next
 

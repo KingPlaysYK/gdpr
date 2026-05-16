@@ -34,19 +34,26 @@
     "dataset_translation_issues": "#6-#84",
     "lexicon_infrastructure_issues": "#86-#97",
     "lexicon_book_extraction_issues": "#98-#176",
+    "fresh_start_cleanup_issues": "#177-#183",
     "word_summary_issues": "Generated after the discovered-word manifest exists."
   },
-  "pre_policy_completed_serial_numbers_need_repair": [
-    "6323683",
-    "6323684",
-    "6323685",
-    "6323686",
-    "6323687",
-    "6323688",
-    "6323689",
-    "6323690",
-    "6323691"
-  ],
+  "fresh_start_cleanup": {
+    "cleanup_tracker_issue": "https://github.com/KingPlaysYK/gdpr/issues/177",
+    "pre_policy_outputs_deleted": true,
+    "deleted_pre_policy_serial_numbers": [
+      "6323683",
+      "6323684",
+      "6323685",
+      "6323686",
+      "6323687",
+      "6323688",
+      "6323689",
+      "6323690",
+      "6323691"
+    ],
+    "old_translation_checkpoints_deleted": true,
+    "source_and_metadata_preserved": true
+  },
   "next_issue": "https://github.com/KingPlaysYK/gdpr/issues/89",
   "next_action": "Implement deterministic extraction and indexing script for the lexicon workflow.",
   "metadata_required": true,

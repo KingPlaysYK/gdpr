@@ -27,7 +27,7 @@ Local extraction found:
 - Umbrella goal: #2
 - Original language-books goal: #1
 - Contextual-only policy: #3
-- Repair pre-policy row outputs: #4
+- Repair pre-policy row outputs: #4, superseded by fresh-start deletion
 - Contextual continuation tracker: #5
 - Book translation issue map: #6 through #84
 - Sourced lexicon tracker: #85
@@ -77,6 +77,7 @@ D:\ShamelaTranslation
 This goal is complete when:
 
 - All 79 language books have been inspected for Arabic word entries.
+- Stale pre-policy generated translation outputs have been deleted and are not treated as retained work.
 - Every extracted word-entry candidate has source references.
 - A global discovered-word manifest exists.
 - Every discovered normalized Arabic word has its own GitHub issue.

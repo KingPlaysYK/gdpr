@@ -93,3 +93,11 @@
 - Updated repository docs and Codex state for the lexicon workflow under issue #96.
 - Added `docs/lexicon-workflow.md`, `docs/lexicon-entry-schema.md`, and `docs/source-reference-schema.md`.
 - Deprecated the active use of `docs/word-by-word-schema.md`; it remains historical only.
+- User requested a fresh start before lexicon extraction.
+- Created cleanup tracker #177 and atomic cleanup issues #178 through #183.
+- Deleted generated pre-policy translated-row JSONL outputs from `D:\ShamelaTranslation\translated\codex_chunks`.
+- Deleted generated pre-policy word-by-word JSONL outputs from `D:\ShamelaTranslation\translated\word_by_word`.
+- Deleted stale translation checkpoints from `D:\ShamelaTranslation\checkpoints`.
+- Deleted stale old-run note `D:\ShamelaTranslation\logs\codex_runs\next_chunk.md`.
+- Removed empty generated output folders after deletion.
+- Preserved source corpus files, metadata inventory files, repository history, and GitHub issue history.

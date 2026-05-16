@@ -13,7 +13,7 @@ https://github.com/KingPlaysYK/gdpr
 - Umbrella goal: https://github.com/KingPlaysYK/gdpr/issues/2
 - Sourced lexicon tracker: https://github.com/KingPlaysYK/gdpr/issues/85
 - Contextual-only policy: https://github.com/KingPlaysYK/gdpr/issues/3
-- Pre-policy repair: https://github.com/KingPlaysYK/gdpr/issues/4
+- Pre-policy repair: https://github.com/KingPlaysYK/gdpr/issues/4, superseded by fresh-start deletion
 - Contextual continuation tracker: https://github.com/KingPlaysYK/gdpr/issues/5
 
 Every Codex work item must be anchored to a GitHub issue before work starts.
@@ -63,7 +63,7 @@ D:\ShamelaTranslation\lexicon\validation
 D:\ShamelaTranslation\checkpoints
 ```
 
-Legacy pre-policy outputs may exist under `D:\ShamelaTranslation\translated`; they require repair under issue #4 before being treated as compliant.
+Legacy pre-policy generated translation outputs were deleted during fresh-start cleanup under #177 through #183. Do not rely on any pre-policy translated row, word-by-word file, or old translation checkpoint as retained work.
 
 ## Active Policy
 

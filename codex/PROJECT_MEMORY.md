@@ -32,17 +32,19 @@
 - Umbrella goal issue: `#2` (`Goal: Complete all GitHub issues`)
 - Master language-books issue: `#1`
 - Contextual-only policy issue: `#3`
-- Pre-policy repair issue: `#4`
+- Pre-policy repair issue: `#4`, superseded by fresh-start deletion
 - Contextual continuation issue: `#5`
 - Dataset translation issues: `#6` through `#84`
 - Sourced lexicon tracker: `#85`
 - Lexicon infrastructure issues: `#86` through `#97`
 - Lexicon extraction issues: `#98` through `#176`
+- Fresh-start cleanup tracker: `#177`
+- Fresh-start cleanup issues: `#178` through `#183`
 - Setup commit: `efa456b`
 
-## Pre-Policy Translation Progress
+## Fresh-Start Cleanup
 
-The following serials were completed before the contextual-only policy and require repair under issue #4 before they count as compliant:
+The following serials had generated pre-policy translation outputs, but those outputs were deleted and no longer count as retained work:
 
 ```text
 6323683
@@ -55,6 +57,8 @@ The following serials were completed before the contextual-only policy and requi
 6323690
 6323691
 ```
+
+Deleted local generated artifacts included translated-row JSONL, word-by-word JSONL, stale translation checkpoints, and the old `logs\codex_runs\next_chunk.md` run note. Source corpus files and metadata inventory files were kept.
 
 ## Next Work
 
