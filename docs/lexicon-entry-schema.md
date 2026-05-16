@@ -63,10 +63,21 @@ Final summaries should be written only after a word-specific GitHub issue exists
   "meaning_in_usage": "sourced contextual explanation",
   "singular_forms_ar": ["Arabic form"],
   "plural_forms_ar": ["Arabic form"],
+  "synonyms_and_near_synonyms": [
+    {
+      "term_ar": "Arabic synonym or near-synonym with tashkeel when discussed",
+      "normalized_key_ar": "Arabic lookup key",
+      "contextual_translation_en": "contextual English rendering",
+      "relationship": "synonym | near_synonym | contrastive_pair | antonym_if_relevant",
+      "difference_en": "sourced explanation of the semantic, usage, register, dialect, form, or contextual difference",
+      "source_reference_ids": ["string"]
+    }
+  ],
   "examples": [
     {
       "example_ar": "Arabic source example",
       "example_en": "contextual English translation",
+      "supports": "definition | synonym_difference | morphology | usage | source_priority",
       "source_reference_id": "string"
     }
   ],
@@ -117,3 +128,5 @@ Final summaries should be written only after a word-specific GitHub issue exists
 - Use `null` or an empty array for absent evidence.
 - Do not invent author, publisher, page, volume, Quran, Hadith, poetry, historical, or theological data.
 - Do not mark a source class as `not_found` unless it was actually checked.
+- Do not list a synonym, near-synonym, or distinction unless the source evidence supports it.
+- Every example must say what it supports.

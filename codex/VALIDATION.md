@@ -33,6 +33,9 @@ For each final summary:
 - language-book evidence status is recorded
 - singular/plural forms are sourced when present
 - examples are sourced and translated contextually
+- synonyms or near-synonyms are sourced when present
+- differences between synonyms or near-synonyms are sourced
+- examples identify whether they support the definition, synonym distinction, morphology, usage, or source-priority evidence
 
 ## Forbidden In Active Outputs
 
@@ -40,6 +43,8 @@ For each final summary:
 - new `word_by_word_path` requirements
 - unsourced historical claims
 - unsourced theological claims
+- unsourced synonym claims
+- unsourced claims that two words differ in meaning, usage, register, dialect, form, or context
 - invented author, publisher, page, volume, Quran, Hadith, or poetry references
 
 ## Before Closing A Book Extraction Issue

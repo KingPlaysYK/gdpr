@@ -107,3 +107,10 @@
 - Saved sample JSON: `D:\ShamelaTranslation\lexicon\summaries\examples\qurh_issue_185.json`.
 - Saved sample Markdown: `D:\ShamelaTranslation\lexicon\summaries\examples\qurh_issue_185.md`.
 - Validated the sample JSON parses successfully.
+- User added a requirement that entries include sourced synonyms, sourced differences between them, and supporting example sentences.
+- Created issue #186 to update schema/workflow/validation for sourced synonyms and examples.
+- Created issue #187 for a five-entry example batch.
+- Created word-specific issues #188 through #192 for `كَرْه / كُرْه`, `جَهْد / جُهْد`, `نَكَأ / نَكَى`, `طَلْح / طَلَح`, and `صَرْح / صَرَح`.
+- Updated lexicon schema, workflow, and validation docs to require sourced synonym distinctions and examples.
+- Saved five-entry batch outputs under `D:\ShamelaTranslation\lexicon\summaries\examples\batch_187_five_words`.
+- Validated all five batch JSON entries and the manifest parse successfully.

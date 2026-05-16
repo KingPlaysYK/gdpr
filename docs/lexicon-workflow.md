@@ -70,6 +70,9 @@ A final word summary must:
 - cite every substantive claim
 - include all known references for supporting evidence
 - compare definitions and usages across books
+- include sourced synonyms and near-synonyms where the corpus provides them
+- explain sourced differences between synonyms or near-synonyms, such as form, meaning, usage, register, dialect, or context
+- include example Arabic sentences or spans, with contextual English translations, that support definitions and synonym distinctions
 - distinguish attested information from inferred synthesis
 - avoid unsupported theological or historical claims
 
