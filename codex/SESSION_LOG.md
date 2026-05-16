@@ -101,3 +101,9 @@
 - Deleted stale old-run note `D:\ShamelaTranslation\logs\codex_runs\next_chunk.md`.
 - Removed empty generated output folders after deletion.
 - Preserved source corpus files, metadata inventory files, repository history, and GitHub issue history.
+- Created issue #184 for one referenceable example lexicon entry before starting the full pipeline.
+- Created word-specific issue #185 for the sample headword `قَرْح / قُرْح`.
+- Produced one sourced example entry for `قَرْح / قُرْح`.
+- Saved sample JSON: `D:\ShamelaTranslation\lexicon\summaries\examples\qurh_issue_185.json`.
+- Saved sample Markdown: `D:\ShamelaTranslation\lexicon\summaries\examples\qurh_issue_185.md`.
+- Validated the sample JSON parses successfully.
