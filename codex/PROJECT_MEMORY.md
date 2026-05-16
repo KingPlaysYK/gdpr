@@ -5,12 +5,15 @@
 - GitHub is used for goals, issue tracking, schemas, and progress memory.
 - The active umbrella goal issue is `#2`: complete all GitHub issues in this repository.
 - Every Codex work item must be anchored to a GitHub issue. If work is not already covered by an issue, create or identify one first.
-- Large dataset files and translated outputs stay outside GitHub.
+- Large dataset files, extracted lexicon outputs, indexes, manifests, and final summaries stay outside GitHub.
 - Local working folder is `D:\ShamelaTranslation`.
-- First translation scope is Shamela category `29 - كتب اللغة - Language Books`.
-- Translation must include readable English plus word-by-word gloss.
-- Every main translated row must include structured `book_metadata` from `MoMonir/Shamela_Books_info`.
-- The workflow uses Codex as the active translation worker.
+- Active scope is Shamela category `29 - كتب اللغة - Language Books`.
+- Active project goal is a sourced lexicon, not row-only translation.
+- Active translation policy is contextual-only: no literal translation layer and no word-by-word gloss layer.
+- Arabic words, phrases, title terms, and letters being discussed as Arabic must stay Arabic with tashkeel when the form itself is being discussed.
+- Every final word summary must check Quran usage first, Hadith usage next, poetry after that, then other language-book evidence.
+- Every final word summary must be sourced.
+- No final word summary may begin until a word-specific GitHub issue exists.
 
 ## Dataset Facts
 
@@ -23,24 +26,45 @@
 - Category 29 source shard found locally: `train-00042-of-00097.parquet`
 - Category 29 metadata inventory: `D:\ShamelaTranslation\language_books\books_language_category_29.json`
 
-## Translation Progress
-
-- Completed language-books rows: 9
-- Completed serial numbers: `6323683`, `6323684`, `6323685`, `6323686`, `6323687`, `6323688`, `6323689`, `6323690`, `6323691`
-- Current next serial number: `6323692`
-- Current book: `أبو تراب اللغوي وكتابه الاعتقاب`
-- Current book_id: `22640`
-- Current book author: `عبد الرزاق بن فراج الصاعدي`
-
 ## GitHub Facts
 
 - Repo: `KingPlaysYK/gdpr`
-- Umbrella goal issue: `#2` (`Goal: Complete all GitHub issues`) - https://github.com/KingPlaysYK/gdpr/issues/2
-- Master translation issue: `#1` (`Goal: Translate all Shamela language books`)
+- Umbrella goal issue: `#2` (`Goal: Complete all GitHub issues`)
+- Master language-books issue: `#1`
+- Contextual-only policy issue: `#3`
+- Pre-policy repair issue: `#4`
+- Contextual continuation issue: `#5`
+- Dataset translation issues: `#6` through `#84`
+- Sourced lexicon tracker: `#85`
+- Lexicon infrastructure issues: `#86` through `#97`
+- Lexicon extraction issues: `#98` through `#176`
 - Setup commit: `efa456b`
+
+## Pre-Policy Translation Progress
+
+The following serials were completed before the contextual-only policy and require repair under issue #4 before they count as compliant:
+
+```text
+6323683
+6323684
+6323685
+6323686
+6323687
+6323688
+6323689
+6323690
+6323691
+```
+
+## Next Work
+
+Continue with issue #89:
+
+```text
+Lexicon: Implement extraction and indexing script
+```
 
 ## Open Questions
 
-- Decide the default Codex chunk size for language-book pages.
-- Decide whether chunk outputs should later be uploaded to Hugging Face Datasets.
-- Decide how much word-by-word detail is required for very long pages.
+- Decide whether final lexicon summaries should later be uploaded to Hugging Face Datasets.
+- Decide which external Quran/Hadith/poetry corpora or local sources should be accepted when the language books cite them incompletely.

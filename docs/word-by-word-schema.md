@@ -1,74 +1,19 @@
-# Word-By-Word Translation Schema
+# Legacy Word-By-Word Schema
 
-The project records both readable translation and word-by-word translation.
+This schema is preserved only as historical context for pre-policy outputs.
 
-## Main Row Fields
+It is not part of the active workflow.
 
-```json
-{
-  "serial_number": "string",
-  "category_id": "string",
-  "category": "Arabic category",
-  "category_en": "English category",
-  "book_title": "Arabic title",
-  "book_title_en": "English title",
-  "book_id": "string",
-  "book_metadata": {
-    "metadata_source": "MoMonir/Shamela_Books_info",
-    "metadata_local_inventory": "D:\\ShamelaTranslation\\language_books\\books_language_category_29.json",
-    "sn": 7020,
-    "book_id": "string",
-    "book_title": "Arabic title",
-    "book_title_en": "English title",
-    "book_link": "https://shamela.ws/book/...",
-    "author_name": "Arabic author name or null",
-    "author_name_en": "English transliteration or null",
-    "author_year": "death year or null",
-    "nickname": "nickname or null",
-    "author_link": "https://shamela.ws/author/...",
-    "author_id": "string or null",
-    "editor": "editor or null",
-    "publisher": "Arabic publisher or null",
-    "publisher_en": "English publisher translation or null",
-    "edition": "edition or null",
-    "pages": "page count or null",
-    "volumes": "volume count or null",
-    "pagination": "Arabic pagination note or null",
-    "pagination_en": "English pagination note or null",
-    "category": "Arabic category",
-    "category_en": "English category",
-    "category_id": "string"
-  },
-  "page_number": "string or null",
-  "volume_number": "string or null",
-  "text": "Arabic source text",
-  "foot_note": "Arabic source footnote or null",
-  "text_en": "Readable English translation",
-  "literal_translation_en": "Literal English rendering",
-  "foot_note_en": "English footnote translation or null",
-  "word_by_word_path": "Path to word-by-word JSONL",
-  "translation_worker": "codex",
-  "source_dataset": "mhaamh19/shamela_books_text_full"
-}
-```
+Active policy:
 
-## Word-By-Word Row Fields
+- Translate entries contextually, nothing more or less.
+- Do not create literal translation layers.
+- Do not create word-by-word gloss layers.
+- Keep Arabic words, phrases, title terms, and letters Arabic when they are being discussed as Arabic.
+- Apply tashkeel to Arabic words or letters kept inside English explanations when the form itself is being discussed.
 
-```json
-{
-  "serial_number": "string",
-  "book_id": "string",
-  "book_title": "Arabic title",
-  "author_name": "Arabic author name or null",
-  "token_index": 1,
-  "arabic": "Arabic token",
-  "transliteration": "Latin transliteration",
-  "literal_gloss": "word-level English gloss",
-  "contextual_gloss": "context-aware English gloss",
-  "notes": "optional grammar or phrase note"
-}
-```
+For active work, use:
 
-## Rule
-
-Arabic often does not map cleanly one word to one English word. Use phrase notes when a literal gloss would mislead the reader.
+- [Lexicon Workflow](lexicon-workflow.md)
+- [Lexicon Entry Schema](lexicon-entry-schema.md)
+- [Source Reference Schema](source-reference-schema.md)

@@ -1,10 +1,17 @@
 {
-  "project": "Shamela Translation Project",
+  "project": "Shamela Language-Books Lexicon Project",
   "repo": "KingPlaysYK/gdpr",
   "master_issue": "https://github.com/KingPlaysYK/gdpr/issues/1",
   "goal_issue": "https://github.com/KingPlaysYK/gdpr/issues/2",
   "goal_issue_title": "Goal: Complete all GitHub issues",
+  "lexicon_tracker_issue": "https://github.com/KingPlaysYK/gdpr/issues/85",
   "issue_tracking_rule": "Every Codex work item must be anchored to a GitHub issue; create or identify one before doing uncovered work.",
+  "translation_policy": {
+    "mode": "contextual_only",
+    "literal_translation_layer": false,
+    "word_by_word_layer": false,
+    "arabic_terms_rule": "When Arabic words, phrases, title terms, or letters are being discussed as Arabic, keep them Arabic and apply tashkeel when the form itself matters."
+  },
   "current_scope": {
     "category_id": "29",
     "category_ar": "كتب اللغة",
@@ -16,7 +23,20 @@
   },
   "local_root": "D:\\ShamelaTranslation",
   "local_queue": "D:\\ShamelaTranslation\\language_books\\pages_category_29_language_books.jsonl",
-  "completed_serial_numbers": [
+  "lexicon_paths": {
+    "extracted": "D:\\ShamelaTranslation\\lexicon\\extracted",
+    "indexes": "D:\\ShamelaTranslation\\lexicon\\indexes",
+    "manifests": "D:\\ShamelaTranslation\\lexicon\\manifests",
+    "summaries": "D:\\ShamelaTranslation\\lexicon\\summaries",
+    "validation": "D:\\ShamelaTranslation\\lexicon\\validation"
+  },
+  "issue_maps": {
+    "dataset_translation_issues": "#6-#84",
+    "lexicon_infrastructure_issues": "#86-#97",
+    "lexicon_book_extraction_issues": "#98-#176",
+    "word_summary_issues": "Generated after the discovered-word manifest exists."
+  },
+  "pre_policy_completed_serial_numbers_need_repair": [
     "6323683",
     "6323684",
     "6323685",
@@ -27,8 +47,8 @@
     "6323690",
     "6323691"
   ],
-  "next_serial_number": "6323692",
-  "next_action": "Translate language-book queue row 6323692 with readable, literal, and word-by-word layers.",
+  "next_issue": "https://github.com/KingPlaysYK/gdpr/issues/89",
+  "next_action": "Implement deterministic extraction and indexing script for the lexicon workflow.",
   "metadata_required": true,
   "last_updated": "2026-05-16"
 }

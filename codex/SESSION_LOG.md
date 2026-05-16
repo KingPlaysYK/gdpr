@@ -81,3 +81,15 @@
 - Local chunk output: `D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323691.jsonl`.
 - Local word-by-word output: `D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323691.jsonl`.
 - Updated local checkpoint: `D:\ShamelaTranslation\checkpoints\language_books_completed_serial_numbers.txt`.
+- User changed the active policy: translate entries contextually, nothing more or less; do not add literal translation layers or word-by-word gloss layers; keep Arabic forms Arabic with tashkeel when they are being discussed.
+- Created GitHub issue #3 for adopting the contextual-only translation policy.
+- Created GitHub issue #4 for repairing pre-policy translated rows.
+- Created GitHub issue #5 for continuing Shamela translations under the contextual-only policy.
+- Created dataset issue map #6 through #84, one issue per language book, covering all 79 books and 21,178 rows.
+- User expanded the goal into a sourced lexicon project: extract Arabic word entries from all language books, cross-check definitions/usages across the corpus, and produce sourced contextual English summaries.
+- Created GitHub issue #85 as the sourced lexicon tracker.
+- Created lexicon infrastructure issues #86 through #97.
+- Created lexicon extraction issue map #98 through #176, one issue per language book.
+- Updated repository docs and Codex state for the lexicon workflow under issue #96.
+- Added `docs/lexicon-workflow.md`, `docs/lexicon-entry-schema.md`, and `docs/source-reference-schema.md`.
+- Deprecated the active use of `docs/word-by-word-schema.md`; it remains historical only.

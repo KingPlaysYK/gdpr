@@ -1,8 +1,8 @@
-# Shamela Codex Translation Goal
+# Shamela Codex Goal
 
 ## Goal
 
-Translate the Shamela dataset using Codex as the active translation worker, starting with the Shamela language books category.
+Build a sourced English lexicon from the Shamela language-books corpus, using Codex as the active extraction, translation, and synthesis worker.
 
 Dataset:
 
@@ -22,23 +22,51 @@ Local extraction found:
 - Language category page rows: 21,178
 - Source parquet shard: `train-00042-of-00097.parquet`
 
-## Translation Layers
+## GitHub Issue Map
 
-Each translated row should include:
+- Umbrella goal: #2
+- Original language-books goal: #1
+- Contextual-only policy: #3
+- Repair pre-policy row outputs: #4
+- Contextual continuation tracker: #5
+- Book translation issue map: #6 through #84
+- Sourced lexicon tracker: #85
+- Lexicon infrastructure: #86 through #97
+- Per-book lexicon extraction: #98 through #176
 
-- Original Arabic source text
-- Readable English translation
-- Literal English translation
-- Word-by-word gloss
-- Transliteration
-- Phrase notes where word-by-word translation is misleading
-- Structured book metadata from the companion Shamela metadata inventory, including author, book link, author link, publisher, edition, pages, volumes, and pagination notes
+No atomic task may begin without a GitHub issue. A final word summary may not begin until that discovered word has its own issue.
+
+## Active Translation Policy
+
+The active policy is contextual-only:
+
+- Translate the entry in context, nothing more or less.
+- Do not add literal translation layers.
+- Do not add word-by-word gloss layers.
+- Preserve the Arabic source text.
+- When an Arabic word, phrase, title term, or letter is being discussed as Arabic, keep it Arabic.
+- Apply tashkeel to Arabic words or letters kept inside English explanations when the form itself is being discussed.
+
+## Lexicon Requirements
+
+Each discovered Arabic word entry must ultimately receive a sourced English summary containing:
+
+- Arabic headword and normalized key
+- Contextual English translation
+- Linguistic breakdown and morphology
+- Meaning in usage and contextual explanation
+- Singular and plural forms when present in the books
+- Example sentences/usages
+- Historical information when present
+- Theological usage when present
+- Quranic evidence first, Hadith evidence next, poetic evidence after that, and other language-book evidence after those
+- Full references for every supporting source
 
 ## Storage Rule
 
 GitHub stores plans, issues, schemas, progress notes, and code.
 
-Large source files and translated dataset outputs should stay outside the GitHub repository, for example:
+Large source files, extracted word-entry records, cross-book indexes, and final lexicon outputs should stay outside the GitHub repository, for example:
 
 ```text
 D:\ShamelaTranslation
@@ -46,11 +74,11 @@ D:\ShamelaTranslation
 
 ## Definition Of Done
 
-This goal is complete when every accessible row in category `29 - كتب اللغة` has:
+This goal is complete when:
 
-- `text_en`
-- `literal_translation_en`
-- word-by-word gloss data
-- preserved Arabic source text
-- preserved identifiers such as `serial_number`, `book_id`, `category_id`, `volume_number`, and `page_number`
-- preserved `book_metadata` with author and bibliographic metadata from `MoMonir/Shamela_Books_info`
+- All 79 language books have been inspected for Arabic word entries.
+- Every extracted word-entry candidate has source references.
+- A global discovered-word manifest exists.
+- Every discovered normalized Arabic word has its own GitHub issue.
+- Every word issue contains a contextual, sourced English summary.
+- Validation confirms no language-book row, extracted entry, or discovered word is left uncovered.

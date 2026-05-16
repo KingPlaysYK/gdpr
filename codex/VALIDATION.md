@@ -1,22 +1,58 @@
 # Validation Rules
 
-For each completed row:
+## Extracted Word Entries
 
-- `serial_number` exists
+For each extracted record:
+
+- `record_type` is `extracted_word_entry`
+- `extraction_issue` points to the relevant GitHub issue
 - `book_id` exists
-- `category_id` is `29`
-- `book_metadata` exists on the main translated row
-- `book_metadata.metadata_source` is `MoMonir/Shamela_Books_info`
-- `book_metadata.author_name`, `book_metadata.book_link`, and `book_metadata.author_link` are preserved when present in the inventory
-- Arabic source text is preserved
-- `text_en` is non-empty when source `text` exists
-- `literal_translation_en` is non-empty when source `text` exists
-- word-by-word gloss exists or `word_by_word_path` points to it
-- word-by-word rows include `serial_number`, `book_id`, `book_title`, and `author_name`
-- phrase notes exist when a phrase cannot be translated word-for-word cleanly
+- `serial_number` exists
+- `source_reference` exists
+- Arabic source span is preserved
+- `headword_ar` exists
+- `normalized_key_ar` exists
+- `entry_type` is one of the schema values
+- page and volume are preserved when present
+- author, publisher, book link, and author link are preserved when present in metadata
+- Arabic text was not left as mojibake after repair
 
-Before closing a chunk:
+## Final Word Summaries
 
-- No duplicate `serial_number` values in the completed checkpoint
+For each final summary:
+
+- `record_type` is `sourced_word_summary`
+- `word_issue` points to the word-specific GitHub issue
+- `headword_ar` exists and uses tashkeel when the Arabic form is being discussed
+- `contextual_translation_en` is non-empty
+- every substantive claim has at least one source reference
+- cross-book index was checked
+- Quran evidence status is recorded
+- Hadith evidence status is recorded
+- poetry evidence status is recorded
+- language-book evidence status is recorded
+- singular/plural forms are sourced when present
+- examples are sourced and translated contextually
+
+## Forbidden In Active Outputs
+
+- new `literal_translation_en` requirements
+- new `word_by_word_path` requirements
+- unsourced historical claims
+- unsourced theological claims
+- invented author, publisher, page, volume, Quran, Hadith, or poetry references
+
+## Before Closing A Book Extraction Issue
+
+- Every row in the book serial range was inspected
 - Output JSONL parses successfully
-- Arabic text was not corrupted into mojibake
+- Candidate count is recorded
+- Per-book unique candidate list exists
+- Global discovered-word manifest was updated
+
+## Before Closing A Word Summary Issue
+
+- All source-priority checks were completed
+- Summary references resolve to extracted records or accepted source records
+- Validation report is saved locally
+- GitHub issue includes the final summary or points to its local output path

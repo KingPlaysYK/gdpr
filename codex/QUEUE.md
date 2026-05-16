@@ -1,4 +1,4 @@
-# Translation Queue
+# Lexicon Queue
 
 ## Queue Strategy
 
@@ -8,9 +8,9 @@ The full category 29 queue is local because it is data-heavy:
 D:\ShamelaTranslation\language_books\pages_category_29_language_books.jsonl
 ```
 
-GitHub tracks queue strategy and progress, not the full queue data.
+GitHub tracks queue strategy, issue coverage, and progress. Large extracted outputs stay local.
 
-## Current Queue
+## Current Corpus
 
 ```text
 scope: category_id 29
@@ -20,30 +20,23 @@ books: 79
 status: ready locally
 ```
 
-## Completed
+## GitHub Queue Coverage
 
-```text
-6323683
-6323684
-6323685
-6323686
-6323687
-6323688
-6323689
-6323690
-6323691
-```
+- Lexicon tracker: #85
+- Infrastructure tasks: #86 through #97
+- Per-book extraction tasks: #98 through #176
+- Word summary tasks: generated after the discovered-word manifest exists
 
 ## Next
 
 ```text
-6323692
+#89 - Lexicon: Implement extraction and indexing script
 ```
 
 ## Queue Rules
 
-- Work in small chunks.
-- Never translate a row twice unless doing a repair pass.
-- Use `serial_number` as the stable row ID.
-- Update the checkpoint after each completed chunk.
-- Keep local chunk outputs outside GitHub.
+- Work in GitHub issue order unless a dependency requires otherwise.
+- Never start an uncovered atomic task.
+- Use `book_id` and `serial_number` as stable source identifiers.
+- Use a normalized Arabic key only for cross-book lookup, not as a replacement for the cited Arabic form.
+- Update local manifests/checkpoints after each completed issue.

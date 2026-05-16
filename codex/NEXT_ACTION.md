@@ -2,17 +2,15 @@
 
 ## Current Task
 
-Create the next translation chunk for Shamela language books category `29 - كتب اللغة`.
+Continue the sourced lexicon project under GitHub issue #85.
 
-The next untranslated row is:
+The next unfinished infrastructure task is:
 
 ```text
-serial_number: 6323692
-book_id: 22640
-book_title: أبو تراب اللغوي وكتابه الاعتقاب
-page_number: 354
-volume_number: 114
+#89 - Lexicon: Implement extraction and indexing script
 ```
+
+Do not resume row-by-row translation as the next task. The active project is now extracting Arabic word entries, building a cross-book lexicon, generating word-specific issues, and writing sourced contextual summaries.
 
 ## Input
 
@@ -22,51 +20,34 @@ Use local queue:
 D:\ShamelaTranslation\language_books\pages_category_29_language_books.jsonl
 ```
 
-## Output
-
-Save translated chunk locally under:
-
-```text
-D:\ShamelaTranslation\translated\codex_chunks
-```
-
-Save word-by-word gloss locally under:
-
-```text
-D:\ShamelaTranslation\translated\word_by_word
-```
-
-Merge book metadata from:
+Use metadata inventory:
 
 ```text
 D:\ShamelaTranslation\language_books\books_language_category_29.json
 ```
 
+## Output
+
+Use local lexicon folders:
+
+```text
+D:\ShamelaTranslation\lexicon\extracted
+D:\ShamelaTranslation\lexicon\indexes
+D:\ShamelaTranslation\lexicon\manifests
+D:\ShamelaTranslation\lexicon\summaries
+D:\ShamelaTranslation\lexicon\validation
+```
+
 ## Completion Checklist
 
-- [ ] Pick row `6323692`
-- [ ] Add `book_metadata` from `MoMonir/Shamela_Books_info`
-- [ ] Preserve Arabic source text
-- [ ] Add readable English translation
-- [ ] Add literal English translation
-- [ ] Add word-by-word gloss
-- [ ] Add phrase notes if needed
-- [ ] Update local checkpoint
-- [ ] Add GitHub progress note or session log entry
+- [ ] Confirm the work is covered by GitHub issue #89.
+- [ ] Create local lexicon output folders if missing.
+- [ ] Implement deterministic extraction/indexing script.
+- [ ] Ensure extraction records include source references.
+- [ ] Ensure output follows `docs/lexicon-entry-schema.md` and `docs/source-reference-schema.md`.
+- [ ] Update `codex/SESSION_LOG.md`.
+- [ ] Update this file with the next issue.
 
-## Previous Chunk
+## Blocking Rule
 
-Completed row:
-
-```text
-serial_number: 6323691
-book_id: 22640
-book_title: أبو تراب اللغوي وكتابه الاعتقاب
-```
-
-Local outputs:
-
-```text
-D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323691.jsonl
-D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323691.jsonl
-```
+No final word summary may be written until the discovered word has its own GitHub issue.
