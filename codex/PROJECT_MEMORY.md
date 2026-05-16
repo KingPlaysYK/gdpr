@@ -25,9 +25,9 @@
 
 ## Translation Progress
 
-- Completed language-books rows: 2
-- Completed serial numbers: `6323683`, `6323684`
-- Current next serial number: `6323685`
+- Completed language-books rows: 3
+- Completed serial numbers: `6323683`, `6323684`, `6323685`
+- Current next serial number: `6323686`
 - Current book: `أبو تراب اللغوي وكتابه الاعتقاب`
 - Current book_id: `22640`
 - Current book author: `عبد الرزاق بن فراج الصاعدي`

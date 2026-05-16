@@ -25,3 +25,11 @@
 - Created GitHub issue #2: `Goal: Complete all GitHub issues`.
 - Set issue #2 as the umbrella goal issue for the repo.
 - Recorded the rule that every Codex work item must be anchored to a GitHub issue before work begins.
+- Continued work under umbrella issue #2 and translation issue #1.
+- Completed serial `6323685` from category `29 - كتب اللغة`.
+- Source book: `أبو تراب اللغوي وكتابه الاعتقاب`, book_id `22640`, page `346`, volume `114`.
+- Saved readable translation, literal translation, phrase notes, footnote translation, and 218 word-by-word gloss rows locally.
+- Preserved the Arabic source text exactly from the local queue row and reused the structured book metadata from the prior chunk.
+- Local chunk output: `D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323685.jsonl`.
+- Local word-by-word output: `D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323685.jsonl`.
+- Updated local checkpoint: `D:\ShamelaTranslation\checkpoints\language_books_completed_serial_numbers.txt`.
