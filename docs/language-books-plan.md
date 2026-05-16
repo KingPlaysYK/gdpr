@@ -14,6 +14,16 @@ The companion Shamela metadata dataset reports 79 books in this category.
 
 The text dataset extraction found 21,178 page rows for category `29`.
 
+## Metadata Source
+
+Each translated row must include a `book_metadata` object copied from the local category inventory:
+
+```text
+D:\ShamelaTranslation\language_books\books_language_category_29.json
+```
+
+The metadata source is `MoMonir/Shamela_Books_info`. Preserve author name, author link, book link, publisher, edition, pages, volumes, pagination, category, and source inventory identifiers.
+
 ## First Books In Queue
 
 | Book ID | Arabic Title | Author |
@@ -32,11 +42,11 @@ The text dataset extraction found 21,178 page rows for category `29`.
 ## Workflow
 
 1. Pull the next untranslated language-book row.
-2. Repair mojibake if the Arabic text is corrupted.
-3. Translate with Codex.
-4. Add readable English translation.
-5. Add literal translation.
-6. Add word-by-word gloss.
-7. Save output locally.
-8. Record progress in GitHub Issues.
-
+2. Merge the matching `book_metadata` record by `book_id`.
+3. Repair mojibake if the Arabic text is corrupted.
+4. Translate with Codex.
+5. Add readable English translation.
+6. Add literal translation.
+7. Add word-by-word gloss.
+8. Save output locally.
+9. Record progress in GitHub Issues.

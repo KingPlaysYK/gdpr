@@ -13,6 +13,32 @@ The project records both readable translation and word-by-word translation.
   "book_title": "Arabic title",
   "book_title_en": "English title",
   "book_id": "string",
+  "book_metadata": {
+    "metadata_source": "MoMonir/Shamela_Books_info",
+    "metadata_local_inventory": "D:\\ShamelaTranslation\\language_books\\books_language_category_29.json",
+    "sn": 7020,
+    "book_id": "string",
+    "book_title": "Arabic title",
+    "book_title_en": "English title",
+    "book_link": "https://shamela.ws/book/...",
+    "author_name": "Arabic author name or null",
+    "author_name_en": "English transliteration or null",
+    "author_year": "death year or null",
+    "nickname": "nickname or null",
+    "author_link": "https://shamela.ws/author/...",
+    "author_id": "string or null",
+    "editor": "editor or null",
+    "publisher": "Arabic publisher or null",
+    "publisher_en": "English publisher translation or null",
+    "edition": "edition or null",
+    "pages": "page count or null",
+    "volumes": "volume count or null",
+    "pagination": "Arabic pagination note or null",
+    "pagination_en": "English pagination note or null",
+    "category": "Arabic category",
+    "category_en": "English category",
+    "category_id": "string"
+  },
   "page_number": "string or null",
   "volume_number": "string or null",
   "text": "Arabic source text",
@@ -31,6 +57,9 @@ The project records both readable translation and word-by-word translation.
 ```json
 {
   "serial_number": "string",
+  "book_id": "string",
+  "book_title": "Arabic title",
+  "author_name": "Arabic author name or null",
   "token_index": 1,
   "arabic": "Arabic token",
   "transliteration": "Latin transliteration",
@@ -43,4 +72,3 @@ The project records both readable translation and word-by-word translation.
 ## Rule
 
 Arabic often does not map cleanly one word to one English word. Use phrase notes when a literal gloss would mislead the reader.
-

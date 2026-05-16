@@ -32,6 +32,7 @@ Each translated row should include:
 - Word-by-word gloss
 - Transliteration
 - Phrase notes where word-by-word translation is misleading
+- Structured book metadata from the companion Shamela metadata inventory, including author, book link, author link, publisher, edition, pages, volumes, and pagination notes
 
 ## Storage Rule
 
@@ -52,4 +53,4 @@ This goal is complete when every accessible row in category `29 - كتب الل�
 - word-by-word gloss data
 - preserved Arabic source text
 - preserved identifiers such as `serial_number`, `book_id`, `category_id`, `volume_number`, and `page_number`
-
+- preserved `book_metadata` with author and bibliographic metadata from `MoMonir/Shamela_Books_info`

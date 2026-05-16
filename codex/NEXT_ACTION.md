@@ -34,9 +34,16 @@ Save word-by-word gloss locally under:
 D:\ShamelaTranslation\translated\word_by_word
 ```
 
+Merge book metadata from:
+
+```text
+D:\ShamelaTranslation\language_books\books_language_category_29.json
+```
+
 ## Completion Checklist
 
 - [ ] Pick row `6323684`
+- [ ] Add `book_metadata` from `MoMonir/Shamela_Books_info`
 - [ ] Preserve Arabic source text
 - [ ] Add readable English translation
 - [ ] Add literal English translation

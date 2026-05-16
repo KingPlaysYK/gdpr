@@ -7,7 +7,9 @@
     "category_ar": "كتب اللغة",
     "category_en": "Language Books",
     "books": 79,
-    "page_rows": 21178
+    "page_rows": 21178,
+    "metadata_source": "MoMonir/Shamela_Books_info",
+    "metadata_inventory": "D:\\ShamelaTranslation\\language_books\\books_language_category_29.json"
   },
   "local_root": "D:\\ShamelaTranslation",
   "local_queue": "D:\\ShamelaTranslation\\language_books\\pages_category_29_language_books.jsonl",
@@ -16,5 +18,6 @@
   ],
   "next_serial_number": "6323684",
   "next_action": "Translate language-book queue row 6323684 with readable, literal, and word-by-word layers.",
+  "metadata_required": true,
   "last_updated": "2026-05-16"
 }

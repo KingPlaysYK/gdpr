@@ -10,6 +10,7 @@
 - Completed serial `6323683` from category `29 - كتب اللغة`.
 - Source book: `أبو تراب اللغوي وكتابه الاعتقاب`, book_id `22640`.
 - Saved readable translation, literal translation, phrase notes, and word-by-word gloss locally.
+- Added structured book metadata to the completed row, including author, book link, author link, publisher, and pagination metadata.
 - Local chunk output: `D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323683.jsonl`.
 - Local word-by-word output: `D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323683.jsonl`.
 - Updated local checkpoint: `D:\ShamelaTranslation\checkpoints\language_books_completed_serial_numbers.txt`.

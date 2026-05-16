@@ -21,6 +21,7 @@ Current extracted scope:
 - Word-by-word gloss required
 - Readable English translation required
 - Arabic source text preserved
+- Structured book metadata required, including author, Shamela links, publisher, edition, pagination, and source metadata dataset
 
 ## Docs
 
