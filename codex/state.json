@@ -19,10 +19,11 @@
   "completed_serial_numbers": [
     "6323683",
     "6323684",
-    "6323685"
+    "6323685",
+    "6323686"
   ],
-  "next_serial_number": "6323686",
-  "next_action": "Translate language-book queue row 6323686 with readable, literal, and word-by-word layers.",
+  "next_serial_number": "6323687",
+  "next_action": "Translate language-book queue row 6323687 with readable, literal, and word-by-word layers.",
   "metadata_required": true,
   "last_updated": "2026-05-16"
 }

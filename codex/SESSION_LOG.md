@@ -33,3 +33,11 @@
 - Local chunk output: `D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323685.jsonl`.
 - Local word-by-word output: `D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323685.jsonl`.
 - Updated local checkpoint: `D:\ShamelaTranslation\checkpoints\language_books_completed_serial_numbers.txt`.
+- Continued work under umbrella issue #2 and translation issue #1.
+- Completed serial `6323686` from category `29 - كتب اللغة`.
+- Source book: `أبو تراب اللغوي وكتابه الاعتقاب`, book_id `22640`, page `347`, volume `114`.
+- Saved readable translation, literal translation, phrase notes, and 96 word-by-word gloss rows locally.
+- Preserved the Arabic source text exactly from the local queue row and reused the structured book metadata from the prior chunk.
+- Local chunk output: `D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323686.jsonl`.
+- Local word-by-word output: `D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323686.jsonl`.
+- Updated local checkpoint: `D:\ShamelaTranslation\checkpoints\language_books_completed_serial_numbers.txt`.
