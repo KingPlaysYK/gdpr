@@ -1,0 +1,20 @@
+labels:
+  - name: shamela
+    color: 5319e7
+    description: Shamela translation project.
+  - name: translation
+    color: 0e8a16
+    description: Translation work.
+  - name: goal
+    color: 1d76db
+    description: Major project goal.
+  - name: chunk
+    color: cfd3d7
+    description: Small translation batch.
+  - name: word-by-word
+    color: fbca04
+    description: Literal token-level gloss work.
+  - name: language-books
+    color: a2eeef
+    description: Shamela category 29 language books.
+

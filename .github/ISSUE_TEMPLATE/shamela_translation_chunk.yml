@@ -1,0 +1,43 @@
+name: Shamela Translation Chunk
+description: Track a small translation chunk.
+title: "Chunk: "
+labels:
+  - shamela
+  - translation
+  - chunk
+body:
+  - type: input
+    id: category_id
+    attributes:
+      label: Category ID
+      value: "29"
+    validations:
+      required: true
+  - type: input
+    id: book_id
+    attributes:
+      label: Book ID
+      placeholder: "Example: 133417"
+    validations:
+      required: false
+  - type: textarea
+    id: serial_numbers
+    attributes:
+      label: Serial Numbers
+      description: List source row serial numbers in this chunk.
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      value: |
+        - [ ] Readable translation complete
+        - [ ] Literal translation complete
+        - [ ] Word-by-word gloss complete
+        - [ ] Phrase notes added
+        - [ ] Output saved locally
+        - [ ] Progress updated
+    validations:
+      required: true
+

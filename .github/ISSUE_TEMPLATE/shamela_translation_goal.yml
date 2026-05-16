@@ -1,0 +1,43 @@
+name: Shamela Translation Goal
+description: Track a major Shamela translation goal.
+title: "Goal: "
+labels:
+  - shamela
+  - translation
+  - goal
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      value: Translate the Shamela language books category using Codex.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      value: |
+        - Dataset: mhaamh19/shamela_books_text_full
+        - Category ID: 29
+        - Category: كتب اللغة
+        - English category: Language Books
+        - Books: 79
+        - Page rows: 21,178
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      value: |
+        - [ ] Translate readable English text
+        - [ ] Add literal translation
+        - [ ] Add word-by-word gloss
+        - [ ] Preserve Arabic source text
+        - [ ] Preserve stable identifiers
+        - [ ] Track completed serial numbers
+        - [ ] Validate outputs
+    validations:
+      required: true
+
