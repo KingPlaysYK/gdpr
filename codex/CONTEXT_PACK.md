@@ -8,7 +8,13 @@ Translate Shamela language books into English using Codex.
 
 https://github.com/KingPlaysYK/gdpr
 
-## Master Issue
+## Goal Issue
+
+https://github.com/KingPlaysYK/gdpr/issues/2
+
+This umbrella issue tracks the active goal: complete all GitHub issues in this repository.
+
+## Master Translation Issue
 
 https://github.com/KingPlaysYK/gdpr/issues/1
 
@@ -67,7 +73,9 @@ Use:
 docs/word-by-word-schema.md
 ```
 
-## Rule
+## Rules
 
-Do not try to load the whole dataset into context. Work one small chunk at a time and record progress in this repo.
-
+- Do not try to load the whole dataset into context.
+- Work one small chunk at a time and record progress in this repo.
+- Every Codex work item must be anchored to a GitHub issue.
+- If a future task does not already have a specific issue, create or identify one before doing the work.

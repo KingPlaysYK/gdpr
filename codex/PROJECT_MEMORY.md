@@ -3,6 +3,8 @@
 ## Decisions
 
 - GitHub is used for goals, issue tracking, schemas, and progress memory.
+- The active umbrella goal issue is `#2`: complete all GitHub issues in this repository.
+- Every Codex work item must be anchored to a GitHub issue. If work is not already covered by an issue, create or identify one first.
 - Large dataset files and translated outputs stay outside GitHub.
 - Local working folder is `D:\ShamelaTranslation`.
 - First translation scope is Shamela category `29 - كتب اللغة - Language Books`.
@@ -23,9 +25,9 @@
 
 ## Translation Progress
 
-- Completed language-books rows: 1
-- Completed serial numbers: `6323683`
-- Current next serial number: `6323684`
+- Completed language-books rows: 2
+- Completed serial numbers: `6323683`, `6323684`
+- Current next serial number: `6323685`
 - Current book: `أبو تراب اللغوي وكتابه الاعتقاب`
 - Current book_id: `22640`
 - Current book author: `عبد الرزاق بن فراج الصاعدي`
@@ -33,7 +35,8 @@
 ## GitHub Facts
 
 - Repo: `KingPlaysYK/gdpr`
-- Master goal issue: `#1`
+- Umbrella goal issue: `#2` (`Goal: Complete all GitHub issues`) - https://github.com/KingPlaysYK/gdpr/issues/2
+- Master translation issue: `#1` (`Goal: Translate all Shamela language books`)
 - Setup commit: `efa456b`
 
 ## Open Questions
