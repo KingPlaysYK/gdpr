@@ -2,7 +2,15 @@
 
 ## Current Task
 
-Create the first real translation chunk for Shamela language books category `29 - كتب اللغة`.
+Create the next translation chunk for Shamela language books category `29 - كتب اللغة`.
+
+The next untranslated row is:
+
+```text
+serial_number: 6323684
+book_id: 22640
+book_title: أبو تراب اللغوي وكتابه الاعتقاب
+```
 
 ## Input
 
@@ -28,7 +36,7 @@ D:\ShamelaTranslation\translated\word_by_word
 
 ## Completion Checklist
 
-- [ ] Pick the first untranslated language-book row
+- [ ] Pick row `6323684`
 - [ ] Preserve Arabic source text
 - [ ] Add readable English translation
 - [ ] Add literal English translation
@@ -37,3 +45,19 @@ D:\ShamelaTranslation\translated\word_by_word
 - [ ] Update local checkpoint
 - [ ] Add GitHub progress note or session log entry
 
+## Previous Chunk
+
+Completed row:
+
+```text
+serial_number: 6323683
+book_id: 22640
+book_title: أبو تراب اللغوي وكتابه الاعتقاب
+```
+
+Local outputs:
+
+```text
+D:\ShamelaTranslation\translated\codex_chunks\language_books\language_books_6323683.jsonl
+D:\ShamelaTranslation\translated\word_by_word\language_books\serial_6323683.jsonl
+```

@@ -19,6 +19,14 @@
 - Category 29 page rows extracted locally: 21,178
 - Category 29 source shard found locally: `train-00042-of-00097.parquet`
 
+## Translation Progress
+
+- Completed language-books rows: 1
+- Completed serial numbers: `6323683`
+- Current next serial number: `6323684`
+- Current book: `أبو تراب اللغوي وكتابه الاعتقاب`
+- Current book_id: `22640`
+
 ## GitHub Facts
 
 - Repo: `KingPlaysYK/gdpr`
@@ -30,4 +38,3 @@
 - Decide the default Codex chunk size for language-book pages.
 - Decide whether chunk outputs should later be uploaded to Hugging Face Datasets.
 - Decide how much word-by-word detail is required for very long pages.
-

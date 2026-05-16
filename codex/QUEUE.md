@@ -20,6 +20,18 @@ books: 79
 status: ready locally
 ```
 
+## Completed
+
+```text
+6323683
+```
+
+## Next
+
+```text
+6323684
+```
+
 ## Queue Rules
 
 - Work in small chunks.
@@ -27,4 +39,3 @@ status: ready locally
 - Use `serial_number` as the stable row ID.
 - Update the checkpoint after each completed chunk.
 - Keep local chunk outputs outside GitHub.
-
