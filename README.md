@@ -27,10 +27,22 @@ Current extracted scope:
 - [Shamela Codex Goal](docs/shamela-codex-goal.md)
 - [Language Books Plan](docs/language-books-plan.md)
 - [Word-By-Word Schema](docs/word-by-word-schema.md)
+- [Codex Long-Run Workflow](docs/codex-long-run-workflow.md)
+
+## Codex Operating System
+
+This repo is set up so Codex can resume work across many sessions without needing the whole previous chat context.
+
+Start every new Codex session here:
+
+1. Read [codex/CONTEXT_PACK.md](codex/CONTEXT_PACK.md)
+2. Read [codex/NEXT_ACTION.md](codex/NEXT_ACTION.md)
+3. Complete one small chunk
+4. Update [codex/SESSION_LOG.md](codex/SESSION_LOG.md)
+5. Update [codex/NEXT_ACTION.md](codex/NEXT_ACTION.md)
 
 ## Storage
 
 GitHub is for goals, issues, schemas, notes, and progress.
 
 Large source files and translated outputs should be stored locally or in dataset storage, not committed to this repo.
-

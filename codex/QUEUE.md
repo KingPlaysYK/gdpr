@@ -1,0 +1,30 @@
+# Translation Queue
+
+## Queue Strategy
+
+The full category 29 queue is local because it is data-heavy:
+
+```text
+D:\ShamelaTranslation\language_books\pages_category_29_language_books.jsonl
+```
+
+GitHub tracks queue strategy and progress, not the full queue data.
+
+## Current Queue
+
+```text
+scope: category_id 29
+category: كتب اللغة
+rows: 21,178
+books: 79
+status: ready locally
+```
+
+## Queue Rules
+
+- Work in small chunks.
+- Never translate a row twice unless doing a repair pass.
+- Use `serial_number` as the stable row ID.
+- Update the checkpoint after each completed chunk.
+- Keep local chunk outputs outside GitHub.
+

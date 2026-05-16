@@ -1,0 +1,17 @@
+{
+  "project": "Shamela Translation Project",
+  "repo": "KingPlaysYK/gdpr",
+  "master_issue": "https://github.com/KingPlaysYK/gdpr/issues/1",
+  "current_scope": {
+    "category_id": "29",
+    "category_ar": "كتب اللغة",
+    "category_en": "Language Books",
+    "books": 79,
+    "page_rows": 21178
+  },
+  "local_root": "D:\\ShamelaTranslation",
+  "local_queue": "D:\\ShamelaTranslation\\language_books\\pages_category_29_language_books.jsonl",
+  "next_action": "Translate the first real language-book queue row with readable, literal, and word-by-word layers.",
+  "last_updated": "2026-05-16"
+}
+
